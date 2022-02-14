@@ -1,3 +1,25 @@
+# v0.1.6 (Mon Feb 14 2022)
+
+#### ⚠️ Pushed to `main`
+
+- 📦 NEW: adds height.measure and width.measure properties to account for scroll bars ([@aharvard](https://github.com/aharvard))
+- 📖 DOC: updates install docs ([@aharvard](https://github.com/aharvard))
+- 📖 DOC: adds showcase.gif ([@aharvard](https://github.com/aharvard))
+- 📖 DOC: updates SB icon path ([@aharvard](https://github.com/aharvard))
+- 📖 DOC: updates README title ([@aharvard](https://github.com/aharvard))
+- 📖 DOC: add SB icon graphics ([@aharvard](https://github.com/aharvard))
+- 🐛 FIX: disable user-select ([@aharvard](https://github.com/aharvard))
+- 📖 DOC: Updates SB name and edits docs ([@aharvard](https://github.com/aharvard))
+- 🐛 FIX: updates metadata ([@aharvard](https://github.com/aharvard))
+- 📦 NEW: adds initial code for addon ([@aharvard](https://github.com/aharvard))
+- Initial commit ([@aharvard](https://github.com/aharvard))
+
+#### Authors: 1
+
+- Andrew Harvard ([@aharvard](https://github.com/aharvard))
+
+---
+
 # v0.1.5 (Mon Feb 14 2022)
 
 #### ⚠️ Pushed to `main`
