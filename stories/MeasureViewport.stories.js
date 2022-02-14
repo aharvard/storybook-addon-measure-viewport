@@ -10,6 +10,21 @@ const Template = (args) => <Button primary={true} label="Button" />;
 
 export const Default = Template.bind({});
 
+export const SubtractsScrollBarFromMeasure = () => (
+  <div style={{ height: "150vh" }}>
+    <Button primary={true} label="Button" />
+  </div>
+);
+SubtractsScrollBarFromMeasure.parameters = {
+  measureViewport: {
+    height: {
+      measure: "clientHeight",
+    },
+    width: {
+      measure: "clientWidth",
+    },
+  },
+};
 export const HeightOnly = Template.bind({});
 HeightOnly.parameters = {
   measureViewport: {

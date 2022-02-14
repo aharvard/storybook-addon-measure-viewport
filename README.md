@@ -35,10 +35,12 @@ export const parameters = {
     height: {
       color: "rgba(0,100,0,0.5)", // overrides measureViewport.color
       display: "right", // "left", "middle, "right", "none"
+      measure: "clientHeight", //  "clientHeight", "innerHeight"
     },
     width: {
       color: "#0033cc55", // overrides measureViewport.color
       display: "bottom", // "top", "middle, "bottom", "none"
+      measure: "clientWidth", //  "clientWidth", "innerWidth"
     },
   },
 };
@@ -46,13 +48,15 @@ export const parameters = {
 
 ### Addon API
 
-| Property                         | Type/Options                                                                                                                    | Default   |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------- |
-| `measureViewport.color`          | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for both width and height                     | `#e9004e` |
-| `measureViewport.height.color`   | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for height, overrides `measureViewport.color` | `#e9004e` |
-| `measureViewport.height.display` | One of: `left`, `middle`, `right`, `none`                                                                                       | `left`    |
-| `measureViewport.width.color`    | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for width, overrides `measureViewport.color`  | `#e9004e` |
-| `measureViewport.width.display`  | One of: `top`, `middle`, `bottom`, `none`                                                                                       | `top`     |
+| Property                         | Type/Options                                                                                                                    | Default       |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| `measureViewport.color`          | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for both width and height                     | `#e9004e`     |
+| `measureViewport.height.color`   | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for height, overrides `measureViewport.color` | `#e9004e`     |
+| `measureViewport.height.display` | One of: `left`, `middle`, `right`, `none`                                                                                       | `left`        |
+| `measureViewport.height.measure` | One of: `innerHeight` (includes scroll bar height in total), `clientHeight`                                                     | `innerHeight` |
+| `measureViewport.width.color`    | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for width, overrides `measureViewport.color`  | `#e9004e`     |
+| `measureViewport.width.display`  | One of: `top`, `middle`, `bottom`, `none`                                                                                       | `top`         |
+| `measureViewport.width.measure`  | One of: `innerWidth` (includes scroll bar width in total), `clientWidth`                                                        | `innerWidth`  |
 
 You can also configure on per-story or per-component basis using [parameter inheritance](https://storybook.js.org/docs/react/writing-stories/parameters#component-parameters):
 
@@ -68,10 +72,12 @@ export default {
       height: {
         color: "rgba(0,100,0,0.5)", // overrides measureViewport.color
         display: "right", // "left", "middle, "right", "none"
+        measure: "clientHeight", //  "clientHeight", "innerHeight"
       },
       width: {
         color: "#0033cc55", // overrides measureViewport.color
         display: "bottom", // "top", "middle, "bottom", "none"
+        measure: "clientWidth", //  "clientWidth", "innerWidth"
       },
     },
   },

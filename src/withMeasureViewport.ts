@@ -5,17 +5,17 @@ import {
   useParameter,
 } from "@storybook/addons";
 
-type Measure = {};
-
 type Params = {
   color: string;
-  width: {
-    color: string;
-    display: "top" | "middle" | "bottom" | "none";
-  };
   height: {
     color: string;
     display: "left" | "middle" | "right" | "none";
+    measure: "clientHeight" | "innerHeight";
+  };
+  width: {
+    color: string;
+    display: "top" | "middle" | "bottom" | "none";
+    measure: "clientWidth" | "innerWidth";
   };
 };
 
@@ -131,15 +131,41 @@ export const withMeasureViewport = (StoryFn: () => StoryFn) => {
   const [{ measureViewportActive }] = useGlobals();
 
   const params: Params = useParameter("measureViewport");
-
   const measureViewportEl = document.createElement("div");
   measureViewportEl.id = "measureViewport";
   measureViewportEl.style.setProperty("--color", params?.color || "#e9004e");
 
   useEffect(() => {
-    console.log({ params });
     function measureWindow() {
       const { clientHeight, clientWidth } = document.documentElement;
+      const { innerHeight, innerWidth } = window;
+
+      function getMeasurement(
+        measure: Params["width"]["measure"] | Params["height"]["measure"]
+      ): number {
+        let measurement: number;
+
+        switch (measure) {
+          case "clientHeight":
+            measurement = clientHeight;
+            break;
+          case "clientWidth":
+            measurement = clientWidth;
+            break;
+          case "innerHeight":
+            measurement = innerHeight;
+            break;
+          case "innerWidth":
+            measurement = innerWidth;
+            break;
+          default:
+            measurement = 0;
+            break;
+        }
+
+        return measurement;
+      }
+
       measureViewportEl.innerHTML = `
       <style>${style}</style>
         
@@ -155,8 +181,10 @@ export const withMeasureViewport = (StoryFn: () => StoryFn) => {
       >
         <span 
         class="measure-text 
-        aria-label="height: ${clientHeight}px"">
-        ${clientHeight}px
+        aria-label="height: ${
+          getMeasurement(params?.height?.measure) || innerHeight
+        }px">
+        ${getMeasurement(params?.height?.measure) || innerHeight}px
         </span>
         </div>
         
@@ -173,11 +201,14 @@ export const withMeasureViewport = (StoryFn: () => StoryFn) => {
         >
         <span 
         class="measure-text" 
-        aria-label="width: ${clientWidth}px">
-        ${clientWidth}px
+        aria-label="width: ${
+          getMeasurement(params?.width?.measure) || innerWidth
+        }px">
+        ${getMeasurement(params?.width?.measure) || innerWidth}px
+
         </span>
       </div>
-        `;
+      `;
     }
 
     if (measureViewportActive) {
