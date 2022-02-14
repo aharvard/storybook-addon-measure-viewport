@@ -1,6 +1,6 @@
 {
   "name": "storybook-addon-measure-viewport",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Measure height and width of current viewport",
   "keywords": [
     "storybook-addons",
