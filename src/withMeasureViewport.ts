@@ -29,6 +29,7 @@ const style = `#measureViewport {
   right: 0;
   top: 0;
   pointer-events: none;
+  user-select: none;
 }
 .measure {
   position: absolute;
