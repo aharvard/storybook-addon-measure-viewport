@@ -1,17 +1,35 @@
 {
-  "name": "storybook-addon-kit",
-  "version": "0.0.0",
-  "description": "everything you need to build a Storybook addon",
+  "name": "storybook-addon-measure-viewport",
+  "version": "0.1.0",
+  "description": "Measure height and width of current viewport",
   "keywords": [
     "storybook-addons",
+    "design",
     "style",
-    "test"
+    "viewport",
+    "measure",
+    "size",
+    "browser",
+    "innerWidth",
+    "innerHeight",
+    "width",
+    "height",
+    "breakpoint",
+    "responsive"
   ],
+  "homepage": "https://github.com/aharvard/storybook-addon-measure-viewport",
+  "bugs": {
+    "url": "https://github.com/aharvard/storybook-addon-measure-viewport/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/storybookjs/storybook-addon-kit"
+    "url": "https://github.com/aharvard/storybook-addon-measure-viewport"
   },
-  "author": "winkerVSbecks",
+  "author": {
+    "name": "Andrew Harvard",
+    "email": "andrew.t.harvard@gmail.com",
+    "url": "https://andrewharvard.com/"
+  },
   "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
