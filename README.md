@@ -7,7 +7,11 @@ Storybook Addon Measure Viewport displays the height and width of current viewpo
 ## Installation
 
 ```sh
-npm install --save-dev storybook-addon-measure-viewport
+// Install with NPM
+npm install -D storybook-addon-measure-viewport
+
+// Install with Yarn
+yarn add -D storybook-addon-measure-viewport
 ```
 
 within [`.storybook/main.js`](https://storybook.js.org/docs/react/configure/overview#configure-your-storybook-project):
