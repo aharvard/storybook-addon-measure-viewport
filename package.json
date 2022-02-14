@@ -99,7 +99,7 @@
     "access": "public"
   },
   "storybook": {
-    "displayName": "Storybook Addon Measure Viewport",
+    "displayName": "Measure Viewport",
     "supportedFrameworks": [
       "react",
       "vue",

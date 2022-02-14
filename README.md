@@ -40,20 +40,20 @@ export const parameters = {
 
 ### Addon API
 
-| Property                         | Type/Options                                                                                                                    |   Default |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------: |
+| Property                         | Type/Options                                                                                                                    | Default   |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------- |
 | `measureViewport.color`          | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for both width and height                     | `#e9004e` |
 | `measureViewport.height.color`   | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for height, overrides `measureViewport.color` | `#e9004e` |
-| `measureViewport.height.display` | One of: `left`, `middle`, `right`, `none`                                                                                       |    `left` |
+| `measureViewport.height.display` | One of: `left`, `middle`, `right`, `none`                                                                                       | `left`    |
 | `measureViewport.width.color`    | String: [CSS color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) for width, overrides `measureViewport.color`  | `#e9004e` |
-| `measureViewport.width.display`  | One of: `top`, `middle`, `bottom`, `none`                                                                                       |     `top` |
+| `measureViewport.width.display`  | One of: `top`, `middle`, `bottom`, `none`                                                                                       | `top`     |
 
 You can also configure on per-story or per-component basis using [parameter inheritance](https://storybook.js.org/docs/react/writing-stories/parameters#component-parameters):
 
 ```js
 // Button.stories.js
 
-// Set padding options for all Button stories
+// Set options for all Button stories
 export default {
   title: "Button",
   parameters: {
