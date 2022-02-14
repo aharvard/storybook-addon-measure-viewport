@@ -1,6 +1,6 @@
-# Storybook Measure Viewport Addon
+# Storybook Addon Measure Viewport
 
-Storybook Measure Viewport Addon displays the height and width of current viewport.
+Storybook Addon Measure Viewport displays the height and width of current viewport.
 
 ## Installation
 
