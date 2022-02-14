@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>measure-viewport-icon</title>
+    <defs>
+        <rect id="path-1" x="40" y="40" width="432" height="432"></rect>
+        <filter x="-3.0%" y="-2.5%" width="106.0%" height="106.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.203816447 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="measure-viewport-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#F6F9FC" x="0" y="0" width="512" height="512"></rect>
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Rectangle">
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+        </g>
+        <g id="Group-2" mask="url(#mask-2)">
+            <g transform="translate(40.000000, 93.979167)">
+                <rect id="Rectangle" fill="#FF4785" x="0" y="23.9652778" width="609" height="5.63888889"></rect>
+                <g id="Group" stroke-width="1" fill="none" transform="translate(77.534722, 0.000000)">
+                    <rect id="Rectangle" fill="#FF4785" x="0" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="327.055556" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="163.527778" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="81.7638889" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="245.291667" y="0" width="5.63888889" height="53.5694444"></rect>
+                </g>
+            </g>
+        </g>
+        <g id="Group-2" mask="url(#mask-2)">
+            <g transform="translate(120.354167, 343.500000) rotate(-270.000000) translate(-120.354167, -343.500000) translate(-184.145833, 316.715278)">
+                <rect id="Rectangle" fill="#FF4785" x="0" y="23.9652778" width="609" height="5.63888889"></rect>
+                <g id="Group" stroke-width="1" fill="none" transform="translate(78.944444, 0.000000)">
+                    <rect id="Rectangle" fill="#FF4785" x="0" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="327.055556" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="163.527778" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="81.7638889" y="0" width="5.63888889" height="53.5694444"></rect>
+                    <rect id="Rectangle" fill="#FF4785" x="245.291667" y="0" width="5.63888889" height="53.5694444"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
