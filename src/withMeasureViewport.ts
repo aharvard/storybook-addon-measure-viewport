@@ -20,7 +20,7 @@ type Params = {
 };
 
 const style = `#measureViewport {
-  position: absolute;
+  position: fixed;
   padding: 0;
   margin: 0;
   border-radius: 3px;
