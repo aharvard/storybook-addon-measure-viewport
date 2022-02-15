@@ -30,6 +30,7 @@ const style = `#measureViewport {
   top: 0;
   pointer-events: none;
   user-select: none;
+  mix-blend-mode: multiply;
 }
 .measure {
   position: absolute;
