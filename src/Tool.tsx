@@ -16,7 +16,7 @@ export const Tool = () => {
     <IconButton
       key={TOOL_ID}
       active={measureViewportActive}
-      title="Enable measure viewport"
+      title="Measure viewport"
       onClick={toggleMyTool}
     >
       <svg
