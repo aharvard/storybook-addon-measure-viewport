@@ -115,10 +115,9 @@ const style = `#measureViewport {
 }
 .measure-text {
   flex: 0 0 auto;
-  padding-inline: 0.75rem;
+  padding-inline: 0.25rem;
   padding-block: 0.125rem 0.25rem;
   background: #fff;
-  border-radius: 32px;
 }
 .measure--prevent-overlap {
   justify-content: flex-start;
