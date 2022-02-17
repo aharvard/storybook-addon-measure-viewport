@@ -6,7 +6,7 @@ The Measure Viewport addon displays the height and width of the current preview'
 
 ## Installation
 
-1. Install the addon as a devDependency.
+### 1. Install the addon as a devDependency.
 
 ```sh
 // Install with NPM
@@ -16,7 +16,7 @@ npm install -D storybook-addon-measure-viewport
 yarn add -D storybook-addon-measure-viewport
 ```
 
-2. Add `storybook-addon-measure-viewport` to the `addons` array in [`.storybook/main.js`](https://storybook.js.org/docs/react/configure/overview#configure-your-storybook-project).
+### 2. Add `storybook-addon-measure-viewport` to the `addons` array in [`.storybook/main.js`](https://storybook.js.org/docs/react/configure/overview#configure-your-storybook-project).
 
 ```js
 // storybook/main.js
@@ -40,17 +40,17 @@ If you want to have control, you can configure via `measureViewport` [parameter]
 
 ### API
 
-Configure Measure Viewport with the following `parameters.measureViewport` properties (all optional).
+Configure Measure Viewport with the following `parameters.measureViewport` properties. All properties are optional.
 
-| measureViewport   | Type                                                                         | Description                                                                    | Default       |
-| ----------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------- |
-| `.color`          | [css \<color>](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) | Sets color for both width and height measurements                              | `#e9004e`     |
-| `.height.color`   | [css \<color>](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) | Sets color for only height measurement                                         | `#e9004e`     |
-| `.height.display` | `left` \| `middle` \| `right` \| `none`                                      | Positions vertical, height measurement (use `none` to hide)                    | `left`        |
-| `.height.measure` | `innerHeight` \| `clientHeight`                                              | Determines how measure is calculated (use `innerHeight` to include scroll bar) | `innerHeight` |
-| `.width.color`    | [css \<color>](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) | Sets color for width only measurement                                          | `#e9004e`     |
-| `.width.display`  | `top` \| `middle` \| `bottom` \| `none`                                      | Positions horizontal, width measurement (use `none` to hide)                   | `top`         |
-| `.width.measure`  | `innerWidth` \| `clientWidth`                                                | Determines how measure is calculated (use `innerWidth` to include scroll bar)  | `innerWidth`  |
+| measureViewport   | Options                                                                   | Description                                                                    | Default       |
+| ----------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------------- |
+| `.color`          | [css color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) | Sets color for both width and height measurements                              | `#e9004e`     |
+| `.height.color`   | [css color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) | Sets color for only height measurement                                         | `#e9004e`     |
+| `.height.display` | `left` , `middle` , `right` , or `none`                                   | Positions vertical, height measurement (use `none` to hide)                    | `left`        |
+| `.height.measure` | `innerHeight` or `clientHeight`                                           | Determines how measure is calculated (use `innerHeight` to include scroll bar) | `innerHeight` |
+| `.width.color`    | [css color](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) | Sets color for width only measurement                                          | `#e9004e`     |
+| `.width.display`  | `top` , `middle` , `bottom` , `none`                                      | Positions horizontal, width measurement (use `none` to hide)                   | `top`         |
+| `.width.measure`  | `innerWidth` or `clientWidth`                                             | Determines how measure is calculated (use `innerWidth` to include scroll bar)  | `innerWidth`  |
 
 🖥 _Scroll bars can be tricky! If you want to include scroll bars in your measurements, use `innerHeight` or `innerWidth`. If you do NOT want to include scroll bars in your measurements, use `clientHeight` or `clientWidth`._
 
